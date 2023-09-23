@@ -25,5 +25,9 @@ public class PlanesDetails {
         double Total = planes.FlightDuration(8);
         System.out.println(Total);
 
+        String CheckIn = planes.SelectPlane(23);
+        System.out.println(CheckIn);
+
+
     }
 }

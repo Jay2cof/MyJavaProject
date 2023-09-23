@@ -10,7 +10,7 @@ public class FlightDetails {
 
     int prize;
 
-    public void LufthansaDetails(){
+    public void LufthansaDetails() {
         System.out.println("Name: " + this.name);
         System.out.println("NoOfPasengers: " + this.noOfPasengers);
         System.out.println("TakeOff: " + takeOff);
@@ -22,17 +22,30 @@ public class FlightDetails {
 
     }
 
-    public void details(String bags, int quantity){
-            System.out.println("Traveling Packages " + bags +" " + quantity);
-        }
+    public void details(String bags, int quantity) {
+        System.out.println("Traveling Packages " + bags + " " + quantity);
+    }
 
-    public double FlightDuration(int TotalNoHours){
+    public double FlightDuration(int TotalNoHours) {
         int HoursperTrip = TotalNoHours * 2;
-        double Total = HoursperTrip/2;
+        double Total = HoursperTrip / 2;
         return Total;
+    }
+
+    public String SelectPlane(int BaggageSize) {
+        String CheckIn = null;
+        if (BaggageSize<23 && BaggageSize>16) {
+            CheckIn = "Your trip is 100 percent taken care of";
+        } else if (BaggageSize>23 && BaggageSize<16) {
+            CheckIn = "You are responsible for your trip";
+
         }
 
-
+        return CheckIn;
+    }
 
 }
+
+
+
 
