@@ -36,7 +36,7 @@ public class FlightDetails {
         String CheckIn = null;
         if (BaggageSize<23 && BaggageSize>16) {
             CheckIn = "Your trip is 100 percent taken care of";
-        } else if (BaggageSize>23 && BaggageSize<16) {
+        } else {
             CheckIn = "You are responsible for your trip";
 
         }

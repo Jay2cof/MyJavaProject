@@ -26,7 +26,9 @@ public class PlanesDetails {
         System.out.println(Total);
 
         String CheckIn = planes.SelectPlane(23);
+
         System.out.println(CheckIn);
+
 
 
     }
