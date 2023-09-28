@@ -3,7 +3,11 @@ package OOP;
 public class PlanesDetails {
     public static void main(String[] args) {
 
-        FlightDetails planes= new FlightDetails();
+        FlightDetails flight = new FlightDetails();
+        FlightDetails flight1 = new FlightDetails("justice", 200, 23);
+
+
+        /*FlightDetails planes= new FlightDetails();
         planes.name = "Lufthansa";
         planes.noOfPasengers = 210;
         planes.takeOff = "Frankfurt";
@@ -28,6 +32,8 @@ public class PlanesDetails {
         String CheckIn = planes.SelectPlane(23);
 
         System.out.println(CheckIn);
+
+         */
 
 
 

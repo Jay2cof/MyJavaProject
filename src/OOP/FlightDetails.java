@@ -10,6 +10,25 @@ public class FlightDetails {
 
     int prize;
 
+    // Constructor is always using the class name, and is always Public
+    // Constructor Overloading is having more than one constructor in a class
+    // There are three main constructors
+    // Default - is automatically at the background by JVN
+    // No argument constructor when you have no  parameters()
+    // With argument construction when you have paraments in ()
+
+
+    public FlightDetails(){
+        //no arguement Const
+    }
+
+    public FlightDetails(String justice, int time, int noOfPasengers){
+        this.name = justice;
+        this.time = time;
+        this.noOfPasengers = noOfPasengers;
+
+    };
+
     public void LufthansaDetails() {
         System.out.println("Name: " + this.name);
         System.out.println("NoOfPasengers: " + this.noOfPasengers);
