@@ -7,6 +7,7 @@ public class phone {
     private String targetPeople;
     private String name;
     private final int yearlyProduction = 1000;
+    private String priceStatus;
 
     // in Encapsulation you have one means of setting the values of the fields of your class setters
     // another means is the geting the values of your fields is getters
@@ -35,7 +36,7 @@ public class phone {
         return this.size;
     }
 
-    public void setTargetPeople(String setTargetPeople){
+    public void setTargetPeople(String targetPeople){
         this.targetPeople = targetPeople;
 
     }
@@ -52,17 +53,37 @@ public class phone {
         return this.name;
     }
 
-    /*public phone(double prize, int size, String name){
+    public int getYearlyProduction(){
+        return this.yearlyProduction;
+    }
+
+    public String getPriceStatus(){
+        return this.priceStatus;
+    }
+
+    public phone(double prize, int size, String name,String targetPeople, String message){
         this.prize = prize;
         this.size = size;
         this.name = name;
+        this.targetPeople = targetPeople;
+        this.message = message;
 
-        if (prize == 150.23 && prize > 150.23 ){
+        if (prize == 150.23){
+            this.priceStatus = "This price is accurate";
 
+        }
+
+        else if (prize > 150.23 ){
+            this.priceStatus ="This price does not match our company policy";
+
+        }
+
+        else{
+            this.priceStatus = "This price does not match our company policy";
         }
     }
 
-     */
+
 
 
 
