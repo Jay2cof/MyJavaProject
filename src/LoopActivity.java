@@ -8,6 +8,9 @@ public class LoopActivity {
         Random jackPotNummber = new Random();
         int winningNumber = jackPotNummber.nextInt(5);
 
+        if, else loop are conditions (control structures)
+        while, for, and dowhile are loops
+
          */
 
 

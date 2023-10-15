@@ -8,6 +8,9 @@ public class phone {
     private String name;
     private final int yearlyProduction = 1000;
     private String priceStatus;
+    //private String targetStatus;
+    private String sizeStatus;
+
 
     // in Encapsulation you have one means of setting the values of the fields of your class setters
     // another means is the geting the values of your fields is getters
@@ -61,6 +64,10 @@ public class phone {
         return this.priceStatus;
     }
 
+    public String getSizeStatus(){
+        return this.sizeStatus;
+    }
+
     public phone(double prize, int size, String name,String targetPeople, String message){
         this.prize = prize;
         this.size = size;
@@ -80,6 +87,16 @@ public class phone {
 
         else{
             this.priceStatus = "This price does not match our company policy";
+        }
+
+        if(size == 15){
+            this.sizeStatus = "Jayphone has only one size shape and that is 15cm";
+        } else if (size < 15) {
+            this.sizeStatus = "Please return to the dealer";
+
+        }
+        else{
+            this.sizeStatus = "Please return to the dealer";
         }
     }
 

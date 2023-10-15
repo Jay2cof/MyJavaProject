@@ -20,6 +20,14 @@ public class jayPhoneApp {
         System.out.println(jayPhone.getTargetPeople());
 
         System.out.println(jayPhone.getYearlyProduction());
+        System.out.println(jayPhone.getPriceStatus());
+
+
+        phone newJayphone = new phone(170,34, "jaygold", "The Jaygold phone is Mostly to be used by Softwarew developer", "welcome home");
+        System.out.println(newJayphone.getPriceStatus());
+
+        phone Jayhone1 = new phone(153, 65, "jaygold", "The Jaygold phone is Mostly to be used by Software developers", "welcome home");
+        System.out.println(Jayhone1.getSizeStatus());
 
 
     }
