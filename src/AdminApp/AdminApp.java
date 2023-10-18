@@ -1,11 +1,14 @@
 package AdminApp;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AdminApp {
     public static void main(String[] args) {
 
         // Array of Objects
+        Scanner input = new Scanner(System.in);
+
         Admin worker1 = new Admin("Ben", 1265, 34);
         Admin worker2 = new Admin("Charly", 2412, 12);
         Admin worker3 = new Admin("Noo", 1012, 11);
@@ -66,17 +69,74 @@ public class AdminApp {
         allNamesOfWorkers.add(worker1);
         allNamesOfWorkers.add(worker3);
         System.out.println();
+        //showAllWorkers(allNamesOfWorkers);
 
-        showAllWorkers(allNamesOfWorkers);
-        //System.out.println(allNamesOfWorkers); gives you just the address of the class why override?
+        while(true){
+            System.out.println("Enter 1 to view all workers: ");
+            System.out.println("Enter 2 to add a workers: ");
+            System.out.println("Enter 3 to remove a worker: ");
+            System.out.println("Enter 4 to search for new workers: ");
+            System.out.print("Enter target: ");
 
-        //   Type  Variable   collection
+            int target = input.nextInt();
+
+            if ( target == 1){
+               showAllWorkers(allNamesOfWorkers);
+            }
+
+            else if (target == 2) {
+                System.out.println("Workers Name: ");
+                String name = input.next();
+
+                System.out.println("Workers Pin: ");
+                int pin = input.nextInt();
+
+                System.out.println("Workers Age");
+                int Age = input.nextInt();
+
+                allNamesOfWorkers.add(new Admin(name, pin, Age));
+                System.out.println("An Admin has being added");
+
+
+
+                }
+
+            else if (target == 3){
+                System.out.println("Workers name: ");
+                String name = input.next();
+
+                System.out.println("Workers Pin: ");
+                int pin = input.nextInt();
+
+                System.out.println("Workers Age: ");
+                int Age = input.nextInt();
+
+                allNamesOfWorkers.remove(new Admin(name, pin, Age));
+                System.out.println("An Admin has being removed ");
+
+
+            }
+
+            /*else if (target == 4){
+                System.out.println("Worker name: ");
+                int pin = input.nextInt();
+
+                allNamesOfWorkers.get(new Admin(pin));
+            }
+
+             */
+
+        }
+
+        /*  Type  Variable   collection
         for(Admin workers: allNamesOfWorkers){
             System.out.println("Name :" + workers.getName());
             System.out.println("Pin :" + workers.getPin());
             System.out.println("Age :" + workers.getAge());
             System.out.println();
         }
+
+         */
     }
     // you can not create another method inside a method, but you can still call the method from another method
 
