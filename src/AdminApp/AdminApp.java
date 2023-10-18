@@ -38,9 +38,7 @@ public class AdminApp {
             System.out.println(myWorkers.getName());
         }
 
-
         // ArrayList is just like any other Array but is mutable
-
 
         ArrayList<String> allNames = new ArrayList();
         allNames.add("Beck");
@@ -52,10 +50,44 @@ public class AdminApp {
         allNames.remove("Feedable");
         System.out.println(allNames);
 
+        // looping though an Arraylist..this singles out the ame individually
+
         for(String workersName: allNames){
             System.out.println(workersName);
         }
+        // Or
+        for(int i=0; i<allNames.size(); i++){  // diff btw ++i and i++? increment before the var and increment after the var
+            System.out.println(allNames.get(i));
+        }
 
+        ArrayList<Admin> allNamesOfWorkers= new ArrayList();
+
+        allNamesOfWorkers.add(worker2);
+        allNamesOfWorkers.add(worker1);
+        allNamesOfWorkers.add(worker3);
+        System.out.println();
+
+        showAllWorkers(allNamesOfWorkers);
+        //System.out.println(allNamesOfWorkers); gives you just the address of the class why override?
+
+        //   Type  Variable   collection
+        for(Admin workers: allNamesOfWorkers){
+            System.out.println("Name :" + workers.getName());
+            System.out.println("Pin :" + workers.getPin());
+            System.out.println("Age :" + workers.getAge());
+            System.out.println();
+        }
+    }
+    // you can not create another method inside a method, but you can still call the method from another method
+
+    public static void showAllWorkers(ArrayList<Admin>allNamesOfWorker){
+
+        for(Admin workers: allNamesOfWorker){
+            System.out.println("Name :" + workers.getName());
+            System.out.println("Pin :" + workers.getPin());
+            System.out.println("Age :" + workers.getAge());
+            System.out.println();
+        }
     }
 
 

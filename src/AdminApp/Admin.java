@@ -21,6 +21,7 @@ public class Admin {
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -29,6 +30,7 @@ public class Admin {
     }
 
     public double getPin() {
+
         return pin;
     }
 
@@ -37,11 +39,23 @@ public class Admin {
     }
 
     public int getAge() {
+
         return age;
     }
 
     public void setAge(int age) {
+
         this.age = age;
     }
 
+    @Override  // another diamention to ponomo.....is a menthod that has being before
+    public String toString() {
+        return "Admin{" +
+                "name='" + name + '\'' +
+                ", pin=" + pin +
+                ", age=" + age +
+                ", governmentWorker='" + governmentWorker + '\'' +
+                '}';
+
+    }
 }
