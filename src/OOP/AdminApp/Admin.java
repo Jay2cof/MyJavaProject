@@ -1,4 +1,4 @@
-package AdminApp;
+package OOP.AdminApp;
 
 public class Admin {
 

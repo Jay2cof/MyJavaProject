@@ -1,4 +1,4 @@
-package AdminApp;
+package OOP.AdminApp;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -111,6 +111,7 @@ public class AdminApp {
                 System.out.println("Workers Age: ");
                 int Age = input.nextInt();
 
+                allNamesOfWorkers.get(2); // while deleting please use the for loop method
                 allNamesOfWorkers.remove(new Admin(name, pin, Age));
                 System.out.println("An Admin has being removed ");
 
