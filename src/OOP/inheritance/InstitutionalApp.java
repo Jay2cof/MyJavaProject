@@ -43,6 +43,28 @@ public class InstitutionalApp {
         System.out.println("Workers Salary: " + Bank.getSalary());
         System.out.println("Type Of Services: " + Bank.getServices() );
 
+        System.out.println();
+
+        university staffDetails = new university();
+        staffDetails.setName("Mr mark books");
+        staffDetails.setAge(56);
+        staffDetails.setStatus("Male");
+        staffDetails.setLecture("Professor of Science");
+        staffDetails.setDepartment("Medicine");
+        staffDetails.setCourse("Human Anatomy");
+        staffDetails.setSalary(200000);
+
+        System.out.println("Lecturer Name: " + staffDetails.getName());
+        System.out.println("Age Of Lecturer: " + staffDetails.getAge());
+        System.out.println("Status: " + staffDetails.getStatus());
+        System.out.println("Highest Qualification: " + staffDetails.getLecture());
+        System.out.println("Department: " + staffDetails.getDepartment());
+        System.out.println("Course: " + staffDetails.getCourse());
+        System.out.println("Salary of Lecturer: " + staffDetails.getSalary());
+
+        System.out.println();
+
+
 
 
     }
