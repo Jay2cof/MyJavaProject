@@ -15,7 +15,7 @@ public class InstitutionalApp {
         University.setHeadOfDepartment("mr lucky ");
         University.setCostOfTuition(5000);
         University.setPopulationOfUniversity(70000);
-        University.setNumbersOfLecturers(20000);
+        //University.setNumbersOfLecturers(20000);
 
         System.out.println("Where is the University located : " + University.getAddress());
         System.out.println("University Name: " + University.getName());
@@ -29,7 +29,8 @@ public class InstitutionalApp {
 
         System.out.println();
 
-        BankingInstitutions Bank = new BankingInstitutions ();
+        BankingInstitutions Bank = new BankingInstitutions ("JayBank", "Mr Jay Onu", 5000000, 30000, "Abuja", 30000, "bank notes and load providers");
+
 
         Bank.setName("JayBank");
         Bank.setHead("Mr Jay Onu");

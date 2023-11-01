@@ -17,8 +17,19 @@ public class Institutions {
     private int networth;
     private String address;
 
+    // The Super keyword is used to make referance to the super class(Institution class)
 
 
+    public Institutions(String name, String head, int numbers, int networth, String address) {
+        this.name = name;
+        this.head = head;
+        this.numbers = numbers;
+        this.networth = networth;
+        this.address = address;
+    }
+    public Institutions(){
+
+    }
 
     public void Meetings(String BoardMeeting){
         System.out.println("Type of Meeting: " + BoardMeeting);

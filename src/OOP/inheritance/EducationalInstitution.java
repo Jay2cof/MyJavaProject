@@ -8,14 +8,24 @@ public class EducationalInstitution extends Institutions{
     private int costOfTuition;
     private int numbersOfLecturers;
 
-    /*public String getHeadOfUniversity(){
+    public EducationalInstitution(String name, String head, int numbers, int networth,
+                                  String address, String headOfUniversity,
+                                  String headOfDepartment, int populationOfUniversity, int costOfTuition, int numbersOfLecturers) {
+        super(name, head, numbers, networth, address);
+    }
+
+    public EducationalInstitution(){
+
+    }
+
+    public String getHeadOfUniversity(){
         return headOfUniversity;
     }
-    public void String setHeadOfUniversity(String headOfUniversity){
+    public void setHeadOfUniversity(String headOfUniversity){
         this.headOfUniversity = headOfUniversity;
     }
 
-    public void String setHeadOfDepartment(String headOfDepartment){
+    public void setHeadOfDepartment(String headOfDepartment){
         this.headOfDepartment = headOfDepartment;
     }
 
@@ -27,29 +37,27 @@ public class EducationalInstitution extends Institutions{
         return populationOfUniversity;
     }
 
-    public void int setPopulationOfUniversity(int populationOfUniversity){
+    public void setPopulationOfUniversity(int populationOfUniversity){
         this.populationOfUniversity = populationOfUniversity;
     }
 
     public int getCostOfTuition(){
         return costOfTuition;
     }
-    public void int setCostOfTuition(int costOfTuition){
+    public void setCostOfTuition(int costOfTuition){
         this.costOfTuition = costOfTuition;
     }
 
     public int getNumbersOfLecturers(){
         return numbersOfLecturers;
     }
-    public void int setNumberOfLecturers(int numbersOfLecturers){
+    public void setNumberOfLecturers(int numbersOfLecturers){
         this.numbersOfLecturers = numbersOfLecturers;
     }
 
-     */
 
 
-
-    public String getHeadOfUniversity() {
+    /*public String getHeadOfUniversity() {
         return headOfUniversity;
     }
 
@@ -88,6 +96,8 @@ public class EducationalInstitution extends Institutions{
     public void setNumbersOfLecturers(int numbersOfLecturers) {
         this.numbersOfLecturers = numbersOfLecturers;
     }
+
+     */
 
 
 }

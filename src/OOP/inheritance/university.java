@@ -8,11 +8,26 @@ public class university extends EducationalInstitution{
     private int age;
     private int salary; // can you create another method for the same multilevel class?
 
+    public university(String name, String head, int numbers, int networth, String address, String headOfUniversity,
+                      String headOfDepartment, int populationOfUniversity, int costOfTuition, int numbersOfLecturers,
+                      String lecture, String status, String department, String course, int age, int salary) {
+        super(name, head, numbers, networth, address, headOfUniversity, headOfDepartment, populationOfUniversity, costOfTuition, numbersOfLecturers);
+        this.lecture = lecture;
+        this.status = status;
+        Department = department;
+        this.course = course;
+        this.age = age;
+        this.salary = salary;
+    }
+    public university(){
+        super();
+
+    }
     public String getLecture() {
         return lecture;
     }
 
-    public void setLecture(String lecture) {
+    public void setLecture(String lecture) { // void is used when you are not expect a method to return a data
         this.lecture = lecture;
     }
 
