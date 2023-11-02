@@ -8,8 +8,12 @@ public class electroApp {
         Scanner electro = new Scanner(System.in);
 
          Electronics electronics = new Television();
+         electronics.setPrice(200);
+         electronics.setFunctions("for news and documentary viewer");
          electronics.wireless("Samsung");
          electronics.warranty(5);
+         System.out.println(electronics.getPrice());
+         System.out.println(electronics.getFunctions());
 
 
 
