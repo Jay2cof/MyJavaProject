@@ -2,17 +2,16 @@ package OOP.Abstraction;
 
 public class Television extends Electronics {
 
-   /*public Television(String brand, String functions, int price) {
+   public Television(String brand, String functions, int price) {
         super(brand, functions, price);
     }
 
-    */
+    public Television(){
 
-
-
+    }
     @Override
     public void wireless(String earphones){
-        System.out.println("One of the best earphones is  " + earphones);
+        System.out.println("One of the best earphones is " + earphones);
     }
 
     @Override

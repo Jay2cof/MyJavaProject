@@ -17,13 +17,12 @@ public class otherMeansOfTransport extends Transportation {
     // Method overriding is also called runtime or dynamic polymorphism
 
     @Override // Also called Annotation is a short for some hidden program.
-    public void people(){ //the method name, return type and parameter must match when doing method overriding.
+    public void people() { //the method name, return type and parameter must match when doing method overriding.
         System.out.println("Different factors plays when people decide what type of Transport to travel with");
     }
 
     @Override
-    public void trip(int hours){
+    public void trip(int hours) {
         System.out.println("the trip to berlin by plane is " + hours);
     }
-
 }

@@ -13,16 +13,14 @@ public abstract class Electronics {
     public int price;
 
 
-    /*public Electronics(String brand, String functions, int price) {
+    public Electronics(String brand, String functions, int price) {
         Brand = brand;
         this.functions = functions;
         this.price = price;
     }
+    public Electronics(){
 
-     */
-
-
-
+    }
 
 
     public abstract void wireless(String earphones); // An abstract method is a method without a body.
@@ -37,26 +35,32 @@ public abstract class Electronics {
     }
 
     public String getBrand() {
+
         return Brand;
     }
 
     public void setBrand(String brand) {
+
         Brand = brand;
     }
 
     public String getFunctions() {
+
         return functions;
     }
 
     public void setFunctions(String functions) {
+
         this.functions = functions;
     }
 
     public int getPrice() {
+
         return price;
     }
 
     public void setPrice(int price) {
+
         this.price = price;
     }
 }
