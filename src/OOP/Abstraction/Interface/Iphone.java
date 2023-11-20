@@ -2,7 +2,7 @@ package OOP.Abstraction.Interface;
 
 import java.util.ArrayList;
 
-public class Iphone implements PhoneFunctions{
+public class Iphone implements PhoneFunctions, IphoneFunctions{
     @Override
     public String businessCalls(String businessCalls) {
         String calls= "High divination sounds";
@@ -22,5 +22,10 @@ public class Iphone implements PhoneFunctions{
 
         }
 
+    }
+
+    @Override
+    public void MultiTexting() {
+        System.out.println("Can text to different people at the same time");
     }
 }
