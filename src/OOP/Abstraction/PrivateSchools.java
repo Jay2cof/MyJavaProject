@@ -10,6 +10,9 @@ public class PrivateSchools extends School {
 
     @Override
     public void bonus() {
+        int bonusRecieved = getTeachers();
+        setTeachers(bonusRecieved += 2000);
+        System.out.println(getTeachers());
 
     }
 }

@@ -35,6 +35,10 @@ public class SchoolApp {
 
         lowStandard.setTeachers(100);
         lowStandard.bonus();
+        System.out.println();
+
+        highStandard.setTeachers(50);
+        highStandard.bonus();
 
 
     }
