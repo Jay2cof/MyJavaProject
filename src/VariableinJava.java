@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class VariableinJava {
     public static void main(String[] args) {
         //variables is a memory location for storing values
