@@ -1,16 +1,25 @@
 package Exception_Handling_UsingThow;
+// using throw to create a problem
 
 public class UsingThrow {
     //Using the static keyword
 
     public static void main(String[] args) {
-        try {
+       try {
 
-            checkNameExit("jay");
+            checkNameExit("jay"); // wrong name but still works
         }
         catch(ClassCastException J){
             System.out.println("Please login with the right names");
         }
+
+       try{
+           checkDetails("Passenger can fly");
+       }
+       catch(CustomException d){
+           System.out.println("Get the security operative involved");
+       }
+
 
         try{
             checkIdNumber("Mi");
@@ -18,8 +27,6 @@ public class UsingThrow {
         catch(RuntimeException R){
             System.out.println("login with the right details");
         }
-
-
     }
     public static void checkNameExit(String name){
         if (name.equalsIgnoreCase("justice")){
@@ -31,7 +38,7 @@ public class UsingThrow {
 
     }
     public static void checkIdNumber(String IdName){
-        if (IdName.equalsIgnoreCase("Miko")){//why number not allowed
+        if (IdName.equalsIgnoreCase("Miko")){
             System.out.println("the id name belongs to mike");
         }
         else{
@@ -39,4 +46,12 @@ public class UsingThrow {
         }
 
     }
+    public static void checkDetails(String details)throws CustomException{
+        if(details.equalsIgnoreCase("Passenger can fly")){
+        }
+        else{
+            throw new CustomException(1234567890, "the details must match");
+        }
+    }
 }
+// how do you know which exception is working
