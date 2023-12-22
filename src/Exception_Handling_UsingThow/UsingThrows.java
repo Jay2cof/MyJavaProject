@@ -17,7 +17,7 @@ public class UsingThrows {
             System.out.println(" Traveling with the correct name");
         }
     }
-    public static void checkPassportNumber(int Num) throws ClassCastException{ // no SQLEX
+    public static void checkPassportNumber(int Num) throws ClassCastException{
         if (Num == 1223){
             System.out.println("allowed to continue trip");
         }
@@ -27,9 +27,6 @@ public class UsingThrows {
         }
 
          */
-
-
-
     }
     public static void checkName(String realName)throws IOException{
         if(realName.equalsIgnoreCase("Justice Onu")){

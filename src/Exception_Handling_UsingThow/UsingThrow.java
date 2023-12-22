@@ -7,14 +7,15 @@ public class UsingThrow {
     public static void main(String[] args) {
        try {
 
-            checkNameExit("jay"); // wrong name but still works
+            checkNameExit("ju");
         }
         catch(ClassCastException J){
-            System.out.println("Please login with the right names");
+        //    System.out.println("Please login with the right names");
+            J.printStackTrace();
         }
 
        try{
-           checkDetails("Passenger can fly");
+           throw new CustomException(1234567890, "Passenger can fly");
        }
        catch(CustomException d){
            System.out.println("Get the security operative involved");
@@ -54,4 +55,3 @@ public class UsingThrow {
         }
     }
 }
-// how do you know which exception is working

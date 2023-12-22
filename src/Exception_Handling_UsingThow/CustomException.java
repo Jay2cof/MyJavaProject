@@ -4,7 +4,7 @@ package Exception_Handling_UsingThow;
 public class CustomException extends Exception {
     // creating a constructor for CustomException
 
-    int phoneNumber;
+    long phoneNumber;
     String textMessage;
 
    /* @Override
@@ -17,16 +17,16 @@ public class CustomException extends Exception {
 
     */
 
-    CustomException (int phoneNumber, String textMessage){
+    CustomException (long phoneNumber, String textMessage){
         this.phoneNumber = phoneNumber;
         this.textMessage = textMessage;
 
     }
-    public String toSting(){ //why error when boolean is used
-        return "1234567890" + phoneNumber;
+    public long toSting(){
+        return phoneNumber;
     }
 
-    public String toString(){ //what is toString and why use it
+    public String toString(){
         return "the details must match" + textMessage;
     }
 
