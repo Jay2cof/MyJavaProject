@@ -6,7 +6,7 @@ package Exception_Handling_UsingThow;
 import java.io.IOException;
 
 public class UsingThrows {
-    public static void main(String[] args) throws ClassCastException, IOException{ // still functions without the throws
+    public static void main(String[] args) throws ClassCastException, IOException{
 
         checkPassportNumber(1223);
 

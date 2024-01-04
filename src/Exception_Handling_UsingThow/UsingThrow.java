@@ -15,7 +15,7 @@ public class UsingThrow {
         }
 
        try{
-           throw new CustomException(1234567890, "Passenger can fly");
+           throw new CustomException(1234567890l, "Passenger can fly");
        }
        catch(CustomException d){
            System.out.println("Get the security operative involved");
