@@ -33,7 +33,19 @@ public class weather {
         return summer;
     }
 
+    @Override
+    public String toString() {
+        return "weather{" +
+                "winter='" + winter + '\'' +
+                ", temp=" + temp +
+                ", summer='" + summer + '\'' +
+                '}';
+    }
+
     public void setSummer(String summer) {
         this.summer = summer;
+
+
+
     }
 }
